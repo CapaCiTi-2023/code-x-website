@@ -1,0 +1,10 @@
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    backdrop-filter: blur(5px); /* Apply the blur effect */
+    z-index: -1; /* Place it behind other content */
+}

@@ -1,0 +1,22 @@
+body {
+    background-color: #000000;
+    color: #000000;
+}
+#signup {
+    padding: 5rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#signup-form {
+    opacity: .2;
+    transform: translateX(50%);
+    animation: slideIn 0.7s forwards;
+}
+@keyframes slideIn {
+    to {opacity: 1;transform: translateX(0);}
+}
+
