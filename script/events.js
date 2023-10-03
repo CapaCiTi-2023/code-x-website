@@ -54,10 +54,10 @@ events.forEach(event => {
         const subscribeButton = document.createElement("button");
         subscribeButton.textContent = "Join";
         subscribeButton.addEventListener("click", () => {
-            // alert("You have joined the event: " + event.title);
-            let eventWindow = window.open("/", "hello", "width=200,height=200");
-            eventWindow.document.write("Welcome to " + event.title);
-            eventWindow.focus();
+            alert("You have joined the event: " + event.title);
+            // let eventWindow = window.open("/", "hello", "width=200,height=200");
+            // eventWindow.document.write("Welcome to " + event.title);
+            // eventWindow.focus();
         });
 
         if (event.title === "Rock Paper Scissors Event") {
