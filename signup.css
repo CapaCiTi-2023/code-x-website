@@ -5,6 +5,7 @@ body {
 #signup {
     padding: 5rem 10rem;
     display: flex;
+    
     justify-content: center;
     align-items: center;
     height: 100vh;

@@ -24,7 +24,10 @@ header::after  {
     font-size: 28px;
     font-weight: bold;
     color: #fefefe;
+    display: flex;
+    gap: 1rem;
 }
+
 .hamburger {
     display: none;
 }

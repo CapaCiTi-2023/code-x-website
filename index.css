@@ -6,6 +6,7 @@ body {
     color: #ffffff;
     background-image: linear-gradient(to left, transparent 0%, #000000 50%), url(image/luxary/1-2.jpg);
 }
+/* home */
 #home {
     padding: 5rem 10rem;
 }
@@ -61,12 +62,6 @@ body {
     transition: .2s ease;
     width: 560px;
     height: 250px;
-    /* width: 500px;
-    height: 250px;
-    background-image: url(image/luxary/1.jpg);
-    background-repeat: no-repeat;
-    background-position-y: -90px;
-    background-size: cover; */
     filter: grayscale(1) sepia(0) hue-rotate(35deg);
     margin-bottom: 1.5rem;
     opacity: .2;
