@@ -41,25 +41,54 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // car table
   const cars = [
-    { model: 'Model 1', color: 'Red', brand: 'Brand A', category: 'Sport', price: '$30,000' },
-    { model: 'Model 2', color: 'Blue', brand: 'Brand B', category: 'Luxury', price: '$50,000' },
-    { model: 'Model 3', color: 'Black', brand: 'Brand C', category: '4x4', price: '$40,000' }
-    // Add more cars as needed
+    { model: 'Toyota Camry', color: 'Silver', brand: 'Toyota', category: 'Sedan', price: '$25,000' },
+    { model: 'Honda Civic', color: 'Blue', brand: 'Honda', category: 'Sedan', price: '$22,000' },
+    { model: 'Ford Mustang', color: 'Red', brand: 'Ford', category: 'Sport', price: '$35,000' },
+    { model: 'Chevrolet Tahoe', color: 'Black', brand: 'Chevrolet', category: 'SUV', price: '$50,000' },
+    { model: 'BMW 3 Series', color: 'White', brand: 'BMW', category: 'Luxury', price: '$40,000' },
+    { model: 'Jeep Wrangler', color: 'Green', brand: 'Jeep', category: '4x4', price: '$45,000' },
+    { model: 'Audi A4', color: 'Black', brand: 'Audi', category: 'Luxury', price: '$45,000' },
+    { model: 'Tesla Model 3', color: 'Silver', brand: 'Tesla', category: 'Electric', price: '$50,000' },
+    { model: 'Mercedes-Benz C-Class', color: 'Blue', brand: 'Mercedes-Benz', category: 'Luxury', price: '$50,000' },
+    { model: 'Subaru Outback', color: 'Gray', brand: 'Subaru', category: 'SUV', price: '$35,000' },
+    { model: 'Lamborghini Aventador', color: 'Yellow', brand: 'Lamborghini', category: 'Exotic', price: '$400,000' },
+    { model: 'Porsche 911', color: 'Red', brand: 'Porsche', category: 'Sport', price: '$120,000' }
   ];
 
   const carTableBody = document.getElementById('carTableBody');
+  const searchInput = document.getElementById('searchInput');
 
-  cars.forEach(car => {
-      const row = document.createElement('tr');
+  function populateTable(cars) {
+      carTableBody.innerHTML = '';
 
-      row.innerHTML = `
-          <td>${car.model}</td>
-          <td>${car.color}</td>
-          <td>${car.brand}</td>
-          <td>${car.category}</td>
-          <td>${car.price}</td>
-      `;
+      cars.forEach(car => {
+          const row = document.createElement('tr');
 
-      carTableBody.appendChild(row);
+          row.innerHTML = `
+              <td>${car.model}</td>
+              <td>${car.color}</td>
+              <td>${car.brand}</td>
+              <td>${car.category}</td>
+              <td>${car.price}</td>
+          `;
+
+          carTableBody.appendChild(row);
+      });
+  }
+
+  populateTable(cars);
+
+  searchInput.addEventListener('input', function() {
+      const searchTerm = this.value.toLowerCase();
+
+      const filteredCars = cars.filter(car => {
+          return car.model.toLowerCase().includes(searchTerm) ||
+                car.color.toLowerCase().includes(searchTerm) ||
+                car.brand.toLowerCase().includes(searchTerm) ||
+                car.category.toLowerCase().includes(searchTerm) ||
+                car.price.toLowerCase().includes(searchTerm);
+      });
+
+      populateTable(filteredCars);
   });
 });

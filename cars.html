@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/button.css">
-    <link rel="stylesheet" href="css/search.css">
 
-    <link rel="stylesheet" href="metrics.css">
+    <link rel="stylesheet" href="cars.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
@@ -18,11 +17,6 @@
     <header>
         <div class="title">
             <i class="fa-solid fa-car"></i>
-            
-            <!-- <input type="text" id="searchQuery" placeholder="Enter your search query...">
-            <button onclick="performSearch()" id="searchBtn">
-                <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
-            </button> -->
         </div>
 
         <div class="hamburger">
@@ -35,7 +29,7 @@
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
-                <li><a href="metrics.html" class="active">METRICS</a></li>
+                <li><a href="cars.html" class="active">CARS</a></li>
                 <li><a href="events.html">EVENTS</a></li>
                 <li><a href="signup.html">SIGN UP</a></li>
                 <li><a href="newPage.html">TEST BUILD</a></li>
@@ -45,16 +39,18 @@
 
     <main>
         <div class="content-wrapper">
-            <div id="prices">
-                <div class="column">
+            <div id="cars">
+                <div class="row_1">
                     <h1>Metrics of concurrent rentals over time</h1>
-
                     <canvas id="myChart" style="width:100%;"></canvas>
-                
                 </div>
 
-                <div class="column_2">
+                <div class="row_2">
                     <div class="list_of_cars">
+                        <div id="searchBox">
+                            <i class="fa-solid fa-filter"></i>                            
+                            <input type="text" id="searchInput" placeholder="Search for cars...">
+                        </div>
                         <table class="carTable">
                             <thead>
                                 <tr>
