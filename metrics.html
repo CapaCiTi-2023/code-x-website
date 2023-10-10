@@ -19,10 +19,10 @@
         <div class="title">
             <i class="fa-solid fa-car"></i>
             
-            <input type="text" id="searchQuery" placeholder="Enter your search query...">
+            <!-- <input type="text" id="searchQuery" placeholder="Enter your search query...">
             <button onclick="performSearch()" id="searchBtn">
                 <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
-            </button>
+            </button> -->
         </div>
 
         <div class="hamburger">
@@ -52,8 +52,26 @@
                     <canvas id="myChart" style="width:100%;"></canvas>
                 
                 </div>
-            </div>
 
+                <div class="column_2">
+                    <div class="list_of_cars">
+                        <table class="carTable">
+                            <thead>
+                                <tr>
+                                    <th>Model</th>
+                                    <th>Color</th>
+                                    <th>Brand</th>
+                                    <th>Category</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody id="carTableBody">
+                                <!-- JavaScript will populate the table -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
             <footer>
                 <p>
                     &copy; 2023 Code X. All rights reserved.

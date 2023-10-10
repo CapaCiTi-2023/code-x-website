@@ -4,7 +4,7 @@
     border-radius: .5rem;
     border: none;
     width: 12rem;
-    text-align: center;
+    text-align: left;
 }
 #searchBtn {
     background: rgba(0, 0, 0, 0);

@@ -19,3 +19,30 @@ body {
     padding: 2rem;
     width: 50%;
 }
+
+.list_of_cars {
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.carTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.carTable th, .carTable td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.carTable th {
+    background-color: #000000;
+}
+
+.carTable th:first-child, .carTable td:first-child {
+    text-align: left;
+}
