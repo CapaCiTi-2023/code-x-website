@@ -1,7 +1,8 @@
 body {
     background-color: #000000;
-    color: #ffffff;
-}
+    color: #ffffff;}
+
+/* about us */
 #about_us {
     padding: 5rem 10rem;
     display: flex;

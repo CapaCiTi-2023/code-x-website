@@ -77,11 +77,6 @@ body {
     transition: .2s ease;
 }
 
-/* .section-events {
-    background-color: rgba(0, 0, 44, 0.205);
-    background-image: linear-gradient(to bottom right, rgb(0, 0, 44), rgb(0, 0, 44));
-} */
-
 /* Hover effect */
 .event button:hover {
     transform: scale(1.1);
@@ -89,4 +84,14 @@ body {
     background: #B175FF;
 }
 
-
+/* event background blur */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    backdrop-filter: blur(5px); /* Apply the blur effect */
+    z-index: -1; /* Place it behind other content */
+}

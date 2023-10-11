@@ -1,10 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;800&family=Poppins:wght@300;400;500;600;700;800&family=Qwitcher+Grypen:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
-
 .hero .homeBtn a {
     color: rgb(0, 0, 0);
 }
-
 
 .homeBtn {
     font-size: 1.5rem;

@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>On The Go Rental | Prices | Code X</title>
+    <title>On The Go Rental | Cars | Code X</title>
 
+    <!-- applied everywhere -->
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
+    <!-- style -->
     <link rel="stylesheet" href="cars.css">
+    
+    <!-- script -->
+    <script src="script/script.js"></script>
+    <script src="script/metrics.js"></script>
+
+    <!-- imported scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
@@ -39,18 +48,17 @@
 
     <main>
         <div class="content-wrapper">
-            <div id="cars">
-                <div class="row_1">
-                    <h1>Metrics of concurrent rentals over time</h1>
-                    <canvas id="myChart" style="width:100%;"></canvas>
-                </div>
 
-                <div class="row_2">
+            <div id="cars">
+
+                <h1 class="header_1">Pick Your Ride</h1>
+                <div class="row_1">
                     <div class="list_of_cars">
                         <div id="searchBox">
                             <i class="fa-solid fa-filter"></i>                            
                             <input type="text" id="searchInput" placeholder="Search for cars...">
                         </div>
+
                         <table class="carTable">
                             <thead>
                                 <tr>
@@ -65,18 +73,29 @@
                                 <!-- JavaScript will populate the table -->
                             </tbody>
                         </table>
+
                     </div>
                 </div>
+                <div class="row_2">
+                    <h1>Metrics of concurrent rentals over time</h1>
+                    <canvas id="myChart" style="width:100%;"></canvas>
+                </div>
             </div>
-            <footer>
-                <p>
-                    &copy; 2023 Code X. All rights reserved.
-                </p>
-            </footer>
         </div>
     </main>
 
-    <script src="script/metrics.js"></script>
+    <footer>
+        <!-- cookies -->
+        <div id="cookieBanner" style="display:none;">
+            <p>This website uses cookies. Do you accept?</p>
+            <button onclick="acceptCookies()">Accept</button>
+            <button onclick="rejectCookies()">Reject</button>
+        </div>
 
+        <!-- footer -->
+        <p>
+            &copy; 2023 Code X. All rights reserved.
+        </p>
+    </footer>
 </body>
 </html>

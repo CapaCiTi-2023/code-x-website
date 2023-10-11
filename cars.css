@@ -2,6 +2,10 @@ body {
     background-color: #000000;
     color: #ffffff;
 }
+#cars .header_1 {
+    font-size: 4rem;
+}
+
 #cars {
     padding: 5rem 10rem;
     min-height: 100vh;
@@ -10,14 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    gap: 1rem;
-}
-#cars .row_1 {
-    text-align: center;
-    background-color: #181818;
-    border-radius: 2rem;
-    padding: 2rem;
-    width: 50%;
+    gap: 2rem;
 }
 
 /* table */
@@ -27,7 +24,7 @@ body {
     color: white;
     border-radius: 10px;
     padding: 1rem;
-
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,4 +60,13 @@ body {
 #searchBox {
     display: flex;
     gap: 1rem;
+}
+
+/* pie chart */
+.row_2 {
+    text-align: center;
+    background-color: #181818;
+    border-radius: 2rem;
+    padding: 2rem;
+    width: 50%;
 }
