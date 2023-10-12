@@ -16,6 +16,7 @@
 
     <!-- script -->
     <script src="script/script.js"></script>
+    <script src="script/cookies.js"></script>
 </head>
 <body>
     <header>
@@ -36,7 +37,7 @@
                 <li><a href="cars.html">CARS</a></li>
                 <li><a href="events.html" class="active">EVENTS</a></li>
                 <li><a href="signup.html">SIGN UP</a></li>
-                <li><a href="newPage.html">TEST BUILD</a></li>
+                <li><a href="test.html">TEST BUILD</a></li>
             </ul>
         </nav>
     </header>
@@ -59,9 +60,19 @@
     </main>
 
     <footer>
+        <!-- cookies -->
+        <div id="cookieConsent" class="cookie-consent">
+            <div class="cookie-consent-content">
+                <p>This website uses cookies to ensure you get the best experience on our website.</p>
+                <button class="homeBtn" onclick="acceptCookies()">Got It!</button>
+            </div>
+        </div>
+
+        <!-- footer -->
         <p>
             &copy; 2023 Code X. All rights reserved.
         </p>
     </footer>
+    
 </body>
 </html>

@@ -5,22 +5,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>On The Go Rental | Prices | Code X</title>
 
-        <link rel="stylesheet" href="newPage.css">
-        <link rel="stylesheet" href="css/nav.css">
+        <!-- applied everywhere -->
         <link rel="stylesheet" href="css/global.css">
-        <link rel="stylesheet" href="css/search.css">
-
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/button.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+        <!-- style -->
+        <link rel="stylesheet" href="test.css">
+
+        <!-- script -->
+        <script src="script/script.js"></script>
+        <script src="script/cookies.js"></script>
+        <script src="script/signupForm.js"></script>
+
+        <!-- imported scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     </head>
 <body>
     <header>
         <div class="title">
             <i class="fa-solid fa-car"></i>
-            
-            <!-- <input type="text" id="searchQuery" placeholder="Enter your search query...">
-            <button onclick="performSearch()" id="searchBtn">
-                <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
-            </button> -->
         </div>
 
         <div class="hamburger">
@@ -41,12 +46,10 @@
         </nav>
     </header>
 
-    <!-- <p>Website is vulnerable to clickJacking</p>
-    <iframe src="http://127.0.0.1:5500/prices.html" width="500" height="500" style="position: absolute; top: 0; left: 0; opacity: 0;"></iframe> -->
-
     <div class="content-wrapper">
         <main>
             <div id="testPage">
+
                 <h1>Upload a Car Image</h1>
                 
                 <p>To ensure the satisfactory of our customer, we request that you take the time to upload an image of car model you'd like to ride in</p>
@@ -56,21 +59,25 @@
                 <div id="response"></div>
                 <!-- <hr> -->
                 <div id="display_image"></div>
+
             </div>
         </main>
-        
-        <footer>
-            <p>
-                &copy; 2023 Code X. All rights reserved.
-            </p>
-        </footer>
     </div>
 
-    
+    <footer>
+        <!-- cookies -->
+        <div id="cookieConsent" class="cookie-consent">
+            <div class="cookie-consent-content">
+                <p>This website uses cookies to ensure you get the best experience on our website.</p>
+                <button class="homeBtn" onclick="acceptCookies()">Got It!</button>
+            </div>
+        </div>
 
-    <script src="script/upload.js"></script>
-    <script src="script/script.js"></script>
-
+        <!-- footer -->
+        <p>
+            &copy; 2023 Code X. All rights reserved.
+        </p>
+    </footer>
 
 </body>
 </html>

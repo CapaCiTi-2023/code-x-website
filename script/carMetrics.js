@@ -30,15 +30,16 @@ document.addEventListener('DOMContentLoaded', function() {
         position: 'left', 
         align: 'center',
         labels: {
-          fontColor: '#555'
+          fontColor: '#ffffffc7',
+          usePointStyle: true,  // This line makes the legend items circular
+          padding: 20
         }
       },
       animation: {
         duration: 2000,
       },
     }
-  });
-
+});
   // car table
   const cars = [
     { model: 'Toyota Camry', color: 'Silver', brand: 'Toyota', category: 'Sedan', price: '$25,000' },
