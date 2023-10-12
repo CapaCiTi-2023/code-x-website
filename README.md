@@ -1,6 +1,6 @@
-# Code_X_V2
+# Code X - Car Rental Website (OTG)
 
-# Contributors:
+#Contributors:
 
     * Name - 
 
